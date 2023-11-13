@@ -1,0 +1,339 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    position: relative;
+    scroll-behavior: smooth;
+    font-family: Verdana, sans-serif;
+    background-image: url(../Pic/bg_4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: gray;
+    font-weight: 300;
+}
+/*Menu*/
+.navbar{
+  position: absolute;
+  width: 100%;
+  padding-top: 23px;
+  z-index: 99999;
+  font-family: 'Oswald', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 0 0.1px white;
+  transition: 0.3s;
+}
+.navbar a{
+    text-decoration: none;
+}
+.brand{
+    width:30%;
+}
+.brand-link{
+  display: block;
+  font-size: 22px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+}
+.brand-link small{
+  text-transform: uppercase;
+  font-size: 12px;
+  display: block;
+  text-align: center;
+  letter-spacing: 3px;
+  color: rgba(255, 255, 255);
+}
+.navbar-m1{
+    display: flex;
+    margin-bottom: 0;
+    width: 50%;
+    justify-content: space-evenly;
+    margin-right: 10%;
+}
+.nav-link{
+  padding-top: 10px; 
+  padding-bottom: 30px; 
+  font-size: 13px;
+  color: rgba(255, 255, 255, 1.5);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  .nav-link:hover{
+    color: goldenrod;
+  }
+.activemenu{
+  color: goldenrod;
+}
+.fixed{
+  position: fixed;
+  background-color: #151111;
+  border: none;
+  top: -100px;
+
+}
+/*Dropdonw menu*/
+.dropdown {
+  overflow: hidden;
+}
+.dropdown-content {
+  top: 87px;;
+  display: none;
+  position: absolute;
+  background-color: #0d0d0d;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: gray;
+  padding: 12px 20px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover {
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/*Banner*/
+.banner{
+    text-transform: uppercase;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),url(../Pic/bg_3.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.banner h1{
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #fff;
+    line-height: 1.5;
+    font-weight: normal;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.banner p{
+text-align: center;
+position: absolute;
+top: 60%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+.banner a{
+    text-decoration: none;
+    border-bottom: 1px solid gray;
+    margin: 0 10px;
+    color: white;
+    font-size: 16px;
+}
+/*Checkout*/
+.checkout{
+    padding: 112px 50px;
+}
+.checkout .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -16px;
+  }
+  
+  .col-25 {
+    flex: 25%;
+  }
+  
+  .col-50 {
+    flex: 50%;
+  }
+  
+  .col-75 {
+    flex: 75%;
+  }
+  
+  .col-25,
+  .col-50,
+.col-75 {
+    padding: 0 16px;
+  }
+  
+  .container {
+    color: white;
+    background-color: #151111;
+    padding: 5px 20px 15px 20px;
+    border-radius: 3px;
+  }
+  
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    background-color: #151111;
+    color: white;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .btn {
+    background-color: inherit;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+    border: 1px solid gray;
+  }
+  
+  .btn:hover {
+    background-color: #c49b63;
+    color: #151111;
+  }
+  
+  a {
+    color: gray;
+  }
+  
+  hr {
+    border: 1px solid lightgrey;
+  }
+  
+  span.price {
+    float: right;
+    color: gray;
+  }
+  span.price b{
+    color: #fff;
+  }
+/*Footer*/
+.footer{
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-size: 16px;
+    padding: 112px 0;
+    background: #120f0f;
+    color: white;
+  }
+  .footer .contaner{
+    width: 100%;
+    padding: 0 auto;
+    margin: 0 auto;
+  }
+  .footer .contaner .row{
+    margin-bottom: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .contaner .row .content{
+    margin-bottom: 48px;
+    position: relative;
+    padding: 0 15px;
+    max-width: 25%;
+  }
+  .contaner .row .content .text{
+    margin-bottom: 24px;
+    line-height: 1.4;
+    margin-left: 24px;
+  }
+  .contaner .row .content .text p{
+    line-height: 2;
+  }
+    .contaner .row .content .text h2{
+      color: white;
+      margin-bottom: 40px;
+      font-size: 16px;
+      font-weight: 400;
+      position: relative;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      line-height: 1.4;
+    }
+  .block-01{
+    margin-bottom: 24px;
+    display: flex;
+  }
+  .block-img{
+    display: block;
+    height: 80px;
+    width: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 24px;
+  }
+  .block-text{
+    width: calc(100% - 100px);
+    line-height: 1.4;
+  }
+    .block-text h3{
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 1.4;
+    }
+  
+    .p-01 p{
+      margin: 20px 0;
+    }
+    .block-02{
+      margin-bottom: 16px;
+    }
+    .block-02 ul{
+      padding: 0;
+      margin: 0 0 16px 0;
+    }
+    .block-02 li{
+      display: table;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+    .block-02 li .icon{
+      width: 40px;
+      font-size: 24px;
+      padding-top: 2px;
+      color: white;
+      display: table-cell;
+      vertical-align: top;
+    }
+    .block-02 li .text{
+      display: table-cell;
+      vertical-align: top;
+      color: white;
+      line-height: 1.5;
+    }
+    .copyright{
+      position: relative;
+      font-size: 16px;
+      text-align: center;
+      font-weight: 400;
+      word-spacing: 2px;
+      color: gray;
+    }
