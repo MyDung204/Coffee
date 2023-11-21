@@ -81,7 +81,6 @@ html,body{
   background-color: #151111;
   border: none;
   top: -100px;
-
 }
 /*Dropdonw menu*/
 .dropdown {
@@ -148,89 +147,121 @@ transform: translate(-50%, -50%);
     color: white;
     font-size: 16px;
 }
-/*Checkout*/
-.checkout{
-    padding: 112px 50px;
-}
-.checkout .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 -16px;
-  }
-  
-  .col-25 {
-    flex: 25%;
-  }
-  
-  .col-50 {
-    flex: 50%;
-  }
-  
-  .col-75 {
-    flex: 75%;
-  }
-  
-  .col-25,
-  .col-50,
-.col-75 {
-    padding: 0 16px;
-  }
-  
-  .container {
-    color: white;
-    background-color: #151111;
-    padding: 5px 20px 15px 20px;
-    border-radius: 3px;
-  }
-  
-  input[type=text] {
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 12px;
-    border: 1px solid gray;
-    border-radius: 3px;
-    background-color: #151111;
-    color: white;
-  }
-  
-  label {
-    margin-bottom: 10px;
+/*Staff*/
+.seller{
+    padding: 112px 112px;
+    position: relative;
     display: block;
   }
-
-  .btn {
-    background-color: inherit;
+  .textbox{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+  .textbox .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .textbox .text h2{
+    top: -5px;
+    font-size: 40px;
+    font-weight: 700;
+    position: relative;
+    text-transform: uppercase;
+    line-height: 1.4;
     color: white;
-    padding: 12px;
-    margin: 10px 0;
-    border: none;
+    margin-bottom: 16px;
+    
+  }
+  .textbox .text p{
+    text-align: center;
+    margin: 15px 30px;
+    color: gray;
+    width: 70%;
+  }
+  .foodbox{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .foodbox .col{
+    max-width: 25%;
+    position: relative;
     width: 100%;
-    border-radius: 3px;
-    cursor: pointer;
-    font-size: 17px;
-    border: 1px solid gray;
+    padding: 15px 15px;
+    overflow: hidden;
   }
+  .foodbox .col .imgbox{
+    height: 250px;
+    width: auto;
+    overflow: hidden;
+  }
+  .foodbox .col .imgbox .img{
+    height: 250px;
+    display: block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.3s;
+  }
+  .foodbox .col .img:hover{
+    transform: scale(1.2);
+  }
+  .foodbox .col .text{
+    text-align: center;
+    padding-top: 24px;
+  }
+      .foodbox .col .text h3{
+        font-size: 18px;
+        text-transform: uppercase;
+        line-height: 1.4;
+        color: #fff;
+        font-weight: 400;
+        margin-top: 0;
+        margin-bottom: 16px;
+        cursor: pointer;
+      }
+      .foodbox .col .text p{
+        margin-top: 0;
+        margin-bottom: 16px;
+        text-align: center;
+      }
+      .foodbox .col .text .price{
+        margin-top: 0;
+        margin-bottom: 16px;
+        color: white;
+        font-size: 18px;
+        text-align: center;
+      }
+      .addcart{
+        border: 1px solid #c49b63;
+        background: transparent;
+        color: #c49b63;
+        cursor: pointer;
+        font-size: 13px;
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        padding: 10px;
+        transition: 0.3s;
+      }
+      .addcart:hover{
+        background-color: #c49b63;
+        color: white;
+      }
   
-  .btn:hover {
-    background-color: #c49b63;
-    color: #151111;
-  }
-  
-  a {
-    color: gray;
-  }
-  
-  hr {
-    border: 1px solid lightgrey;
-  }
-  
-  span.price {
-    float: right;
-    color: gray;
-  }
-  span.price b{
-    color: #fff;
-  }
+      .welcome{
+        font-size: 50px;
+        display: block;
+        margin-bottom: 0;
+        font-family: "Great Vibes", cursive;
+        color: #c49b63;
+        line-height: 1;
+        margin-bottom: -21px;
+      }
 /*Footer*/
 .footer{
     position: relative;
@@ -338,7 +369,7 @@ transform: translate(-50%, -50%);
       color: gray;
     }
     /*Icon FB,INSTA,YOUTUBE*//*Phần này chỉnh hiệu ứng cho icon */
-  .fa1 {
+  .fa {
     padding: 20px;
     font-size: 30px;
     width: auto;
